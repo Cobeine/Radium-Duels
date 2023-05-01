@@ -1,0 +1,6 @@
+rootProject.name = 'Radium-Duels'
+include 'api'
+include 'main'
+include 'spigot'
+include 'main'
+
