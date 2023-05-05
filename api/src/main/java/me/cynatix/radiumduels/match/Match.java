@@ -4,13 +4,13 @@ import me.cynatix.radiumduels.arena.Arena;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * @author <a href="https://github.com/0Saturnine">0Saturnine</a>
+ * @author <a href="https://github.com/Cobeine">Cobeine</a>
  */
 
-public class Match<K extends Enum<K>> {
+public class Match {
     int time;
     @NotNull Arena arena;
-    @NotNull MatchData<K> matchData;
+    @NotNull MatchData matchData;
 
 
 

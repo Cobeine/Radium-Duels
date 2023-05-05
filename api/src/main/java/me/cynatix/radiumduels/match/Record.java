@@ -3,39 +3,39 @@ package me.cynatix.radiumduels.match;
 import lombok.Builder;
 
 /**
- * @author <a href="https://github.com/0Saturnine">0Saturnine</a>
+ * @author <a href="https://github.com/Cobeine">Cobeine</a>
  */
 @Builder
-public class Record<K extends Enum<K>> {
+public class Record {
 
-    K key;
+    String key;
     int value;
 
-    private Record(K key) {
+    private Record(String key) {
         this.key = key;
         this.value = 0;
     }
 
-    public static <K extends Enum<K>> Record<K> of(K key) {
-        return new Record<>(key);
+    public static Record of(String key) {
+        return new Record(key);
     }
 
-    public Record<K> increment(int i) {
+    public Record increment(int i) {
         value = value + i;
         return this;
     }
 
-    public Record<K> decrement(int i) {
+    public Record decrement(int i) {
         value = value - i;
         return this;
     }
 
-    public Record<K> increment() {
+    public Record increment() {
         return increment(1);
 
     }
 
-    public Record<K> decrement() {
+    public Record decrement() {
         return decrement(1);
     }
 

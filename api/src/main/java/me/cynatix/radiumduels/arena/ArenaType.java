@@ -1,7 +1,7 @@
 package me.cynatix.radiumduels.arena;
 
 /**
- * @author <a href="https://github.com/0Saturnine">0Saturnine</a>
+ * @author <a href="https://github.com/Cobeine">Cobeine</a>
  */
 public enum ArenaType {
 

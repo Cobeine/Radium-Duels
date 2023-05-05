@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 
 /**
- * @author <a href="https://github.com/0Saturnine">0Saturnine</a>
+ * @author <a href="https://github.com/Cobeine">Cobeine</a>
  */
 
 public abstract class JsonFile {

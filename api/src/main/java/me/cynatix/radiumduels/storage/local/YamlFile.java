@@ -10,7 +10,7 @@ import java.lang.reflect.Field;
 import java.util.HashMap;
 
 /**
- * @author <a href="https://github.com/0Saturnine">0Saturnine</a>
+ * @author <a href="https://github.com/Cobeine">Cobeine</a>
  */
 
 @SuppressWarnings("all")

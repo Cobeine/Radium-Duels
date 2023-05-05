@@ -8,7 +8,7 @@ import javax.annotation.Nullable;
 import java.util.List;
 
 /**
- * @author <a href="https://github.com/0Saturnine">0Saturnine</a>
+ * @author <a href="https://github.com/Cobeine">Cobeine</a>
  */
 
 public interface ArenaManager {

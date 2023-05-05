@@ -21,11 +21,11 @@ import java.util.List;
 import java.util.UUID;
 
 /**
- * @author <a href="https://github.com/0Saturnine">0Saturnine</a>
+ * @author <a href="https://github.com/Cobeine">Cobeine</a>
  */
 @Getter
-public class MatchData<K extends Enum<K>> {
-    private final @NotNull HashMap<Contender, List<Record<K>>> records;
+public class MatchData {
+    private final @NotNull HashMap<Contender, List<Record>> records;
     private final Date match_date;
     private final UUID matchUUID;
     @Setter

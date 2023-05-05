@@ -4,7 +4,7 @@ import javax.annotation.Nullable;
 import java.util.PriorityQueue;
 
 /**
- * @author <a href="https://github.com/0Saturnine">0Saturnine</a>
+ * @author <a href="https://github.com/Cobeine">Cobeine</a>
  */
 
 public interface Queue<T> extends Comparable<T> {
