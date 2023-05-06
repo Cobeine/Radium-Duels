@@ -87,5 +87,6 @@ public interface Arena extends Cloneable, Serializable, Comparable<Arena> {
      enum ArenaLeaveReason {
         MATCH_ENDED,CONTENDER_QUIT,SERVER_RESTART
     }
+
 }
 
