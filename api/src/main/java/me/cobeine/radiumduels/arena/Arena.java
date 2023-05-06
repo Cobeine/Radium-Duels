@@ -1,6 +1,6 @@
 package me.cobeine.radiumduels.arena;
 
-import me.cobeine.radiumduels.user.Contender;
+import me.cobeine.radiumduels.user.IContender;
 import me.cobeine.radiumduels.exceptions.ArenaJoinException;
 import me.cobeine.radiumduels.exceptions.ArenaLeaveException;
 import org.bukkit.event.Event;
@@ -59,9 +59,9 @@ public interface Arena extends Cloneable, Serializable, Comparable<Arena> {
      */
     boolean interactable();
 
-    void addContender(Contender contender) throws ArenaJoinException;
+    void addContender(IContender contender) throws ArenaJoinException;
 
-    void removeContender(Contender contender) throws ArenaLeaveException;
+    void removeContender(IContender contender) throws ArenaLeaveException;
 
     /**
      * @returns the type of the arena

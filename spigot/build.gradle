@@ -9,3 +9,10 @@ repositories {
     mavenCentral()
 }
 
+dependencies {
+    implementation project(":api")
+}
+
+test {
+    useJUnitPlatform()
+}
