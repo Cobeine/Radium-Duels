@@ -30,6 +30,7 @@ allprojects {
         compileOnly 'net.luckperms:api:5.4'
         compileOnly 'org.jetbrains:annotations:23.0.0'
         implementation 'com.github.Mqzn:mBoard:1.3'
+        implementation 'com.github.Cobeine:SQLava:1.0-Beta'
         compileOnly('com.github.PlaceholderAPI:PlaceholderAPI:2.11.2')
         //        compileOnly fileTree(dir: 'lib', include: '*.jar')
         annotationProcessor 'org.projectlombok:lombok:1.18.24'
