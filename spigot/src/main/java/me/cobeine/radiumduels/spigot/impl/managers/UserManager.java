@@ -1,5 +1,7 @@
 package me.cobeine.radiumduels.spigot.impl.managers;
 
+import me.cobeine.radiumduels.spigot.impl.utils.DuelsUser;
+
 /**
  * @author <a href="https://github.com/Cobeine">Cobeine</a>
  */
@@ -7,4 +9,6 @@ package me.cobeine.radiumduels.spigot.impl.managers;
 public class UserManager {
 
 
+    public void addUser(DuelsUser user) {
+    }
 }

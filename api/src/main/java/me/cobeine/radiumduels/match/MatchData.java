@@ -7,7 +7,7 @@ import lombok.Setter;
 import me.cobeine.radiumduels.arena.ArenaType;
 import me.cobeine.radiumduels.queue.QueueType;
 import me.cobeine.radiumduels.statistics.AbstractRecordPool;
-import me.cobeine.radiumduels.user.IContender;
+import me.cobeine.radiumduels.user.Contender;
 import org.bukkit.Bukkit;
 import org.jetbrains.annotations.NotNull;
 import org.json.simple.JSONObject;
@@ -25,7 +25,7 @@ import java.util.UUID;
  */
 @Getter
 public class MatchData {
-    private final @NotNull HashMap<IContender, AbstractRecordPool> recordPools;
+    private final @NotNull HashMap<Contender, AbstractRecordPool> recordPools;
     private final Date match_date;
     private final UUID matchUUID;
     @Setter

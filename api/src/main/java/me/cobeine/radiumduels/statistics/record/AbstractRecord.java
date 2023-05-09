@@ -71,4 +71,8 @@ public abstract class AbstractRecord {
     public void clear() {
         this.value = 0;
     }
+
+    public void set(int value) {
+        this.value = value;
+    }
 }

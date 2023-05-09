@@ -8,7 +8,7 @@ import java.util.UUID;
  * @author <a href="https://github.com/Cobeine">Cobeine</a>
  */
 
-public interface IContender {
+public interface Contender {
 
 
     String getName();
@@ -17,10 +17,10 @@ public interface IContender {
 
     AbstractRecordPool getRecordPool();
 
-    IUser getUser();
+    User getUser();
 
     default void applyStatistics() {
-        getUser().acceptMatchRecordPool(getRecordPool());
+        getUser().acceptRecordPool(getRecordPool());
     }
 
 

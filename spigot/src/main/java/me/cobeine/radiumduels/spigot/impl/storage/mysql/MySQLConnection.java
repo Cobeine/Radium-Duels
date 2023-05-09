@@ -29,12 +29,11 @@ public class MySQLConnection implements SQLConnection {
    private HikariDataSource dataSource;
    private final Credentials credentials;
    private Table stats,settings,kits;
-   private @Getter(AccessLevel.MODULE) final MySQLManager sqlManager;
+   private @Getter MySQLManager sqlManager;
 
     public MySQLConnection(Credentials passedCredentials, int threads) throws ClassNotFoundException {
         this.credentials = passedCredentials;
         this.threadPool = Executors.newFixedThreadPool(threads);
-        this.sqlManager = new MySQLManager();
         openConnection((result, throwable) -> {
             if (throwable != null) {
                 onResult(ConnectionResult.SUCCESS);
@@ -56,6 +55,7 @@ public class MySQLConnection implements SQLConnection {
             stats = new PlayerStatsTable();
             kits = new PlayerSavedKitsTable();
             settings = new PlayerSettingsTable();
+            this.sqlManager = new MySQLManager(stats.getName(), kits.getName(), settings.getName(),this);
             try {
                 createTables((r, throwable) -> {
                     if (throwable == null) {

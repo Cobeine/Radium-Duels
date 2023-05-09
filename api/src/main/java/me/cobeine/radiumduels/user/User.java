@@ -8,7 +8,7 @@ import java.util.UUID;
  * @author <a href="https://github.com/Cobeine">Cobeine</a>
  */
 
-public interface IUser {
+public interface User {
 
     String getName();
 
@@ -17,5 +17,13 @@ public interface IUser {
     AbstractRecordPool getStatistics();
 
     UserState getUserState();
-    void acceptMatchRecordPool(AbstractRecordPool recordPool);
+    void acceptRecordPool(AbstractRecordPool recordPool);
+
+    default void updateRecord(Enum<?> key, int value) {
+        if (getStatistics().getRecord(key).isPresent()) {
+            getStatistics().getRecord(key).get().set(value);
+        }
+    }
+
+    Contender createNewContender();
 }

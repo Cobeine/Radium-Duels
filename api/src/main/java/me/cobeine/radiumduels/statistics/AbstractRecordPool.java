@@ -5,6 +5,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.Optional;
 
 /**
  * The type Abstract record pool.
@@ -51,8 +52,8 @@ public abstract class AbstractRecordPool {
      * @param key the key
      * @return the record
      */
-    public <T extends Enum<T>> AbstractRecord getRecord(@NotNull T key) {
-        return pool.get(key);
+    public Optional<AbstractRecord> getRecord(@NotNull Enum<?> key) {
+        return Optional.ofNullable(pool.get(key));
     }
 
     /**
