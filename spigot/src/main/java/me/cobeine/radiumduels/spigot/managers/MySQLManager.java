@@ -1,10 +1,10 @@
-package me.cobeine.radiumduels.spigot.impl.managers;
+package me.cobeine.radiumduels.spigot.managers;
 
 import lombok.AllArgsConstructor;
 import me.cobeine.radiumduels.spigot.Core;
-import me.cobeine.radiumduels.spigot.impl.storage.mysql.MySQLConnection;
-import me.cobeine.radiumduels.spigot.impl.utils.DuelsUser;
-import me.cobeine.radiumduels.spigot.impl.utils.records.StatsRecord;
+import me.cobeine.radiumduels.spigot.storage.mysql.MySQLConnection;
+import me.cobeine.radiumduels.spigot.utils.DuelsUser;
+import me.cobeine.radiumduels.spigot.utils.records.StatsRecord;
 import me.cobeine.sqllava.query.Query;
 
 /**

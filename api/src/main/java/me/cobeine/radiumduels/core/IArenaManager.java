@@ -1,6 +1,7 @@
 package me.cobeine.radiumduels.core;
 
 import me.cobeine.radiumduels.arena.Arena;
+import me.cobeine.radiumduels.exceptions.ArenaCreationException;
 import me.cobeine.radiumduels.exceptions.ArenaGenerationException;
 import org.jetbrains.annotations.NotNull;
 
@@ -11,7 +12,7 @@ import java.util.List;
  * @author <a href="https://github.com/Cobeine">Cobeine</a>
  */
 
-public interface ArenaManager {
+public interface IArenaManager {
 
     /**
      * constant arenas (aka templates) those are the ones to clone from
@@ -49,6 +50,6 @@ public interface ArenaManager {
      * @return the same arena (if modifications needed after creation)
      */
     @NotNull
-    Arena createNewArena(Arena arena);
+    Arena createNewArena(Arena arena) throws ArenaCreationException;
 
 }

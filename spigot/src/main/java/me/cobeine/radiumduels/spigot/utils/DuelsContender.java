@@ -1,4 +1,4 @@
-package me.cobeine.radiumduels.spigot.impl.utils;
+package me.cobeine.radiumduels.spigot.utils;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

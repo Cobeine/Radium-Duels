@@ -1,4 +1,4 @@
-package me.cobeine.radiumduels.spigot.impl.storage.mysql.tables;
+package me.cobeine.radiumduels.spigot.storage.mysql.tables;
 
 import me.cobeine.sqllava.table.Table;
 import me.cobeine.sqllava.table.column.Column;

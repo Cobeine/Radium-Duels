@@ -1,9 +1,9 @@
-package me.cobeine.radiumduels.spigot.impl.utils;
+package me.cobeine.radiumduels.spigot.utils;
 
 import lombok.Getter;
 import lombok.Setter;
-import me.cobeine.radiumduels.spigot.impl.utils.records.UserMatchRecord;
-import me.cobeine.radiumduels.spigot.impl.utils.records.UserStatsRecord;
+import me.cobeine.radiumduels.spigot.utils.records.UserMatchRecord;
+import me.cobeine.radiumduels.spigot.utils.records.UserStatsRecord;
 import me.cobeine.radiumduels.statistics.AbstractRecordPool;
 import me.cobeine.radiumduels.statistics.record.AbstractRecord;
 import me.cobeine.radiumduels.user.Contender;

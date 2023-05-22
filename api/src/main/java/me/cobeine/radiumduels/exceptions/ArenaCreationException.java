@@ -6,14 +6,14 @@ import lombok.Getter;
  * @author <a href="https://github.com/Cobeine">Cobeine</a>
  */
 
-public class ArenaGenerationException extends Exception {
+public class ArenaCreationException extends Exception {
     private final @Getter ExceptionCause cause;
-    public ArenaGenerationException(String tx,ExceptionCause cause) {
-        super(String.format("Failed to generate arena (%s): %s", cause,tx));
+    public ArenaCreationException(String tx, ExceptionCause cause) {
+        super(String.format("Failed to create arena (%s): %s", cause,tx));
         this.cause = cause;
     }
 
-    private enum ExceptionCause {
+    public enum ExceptionCause {
         UNKNOWN,NAME_USED
     }
 

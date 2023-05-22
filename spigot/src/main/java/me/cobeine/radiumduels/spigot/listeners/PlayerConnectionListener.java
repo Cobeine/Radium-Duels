@@ -1,4 +1,4 @@
-package me.cobeine.radiumduels.spigot.impl.listeners;
+package me.cobeine.radiumduels.spigot.listeners;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

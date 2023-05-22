@@ -1,4 +1,4 @@
-package me.cobeine.radiumduels.spigot.impl.utils.records;
+package me.cobeine.radiumduels.spigot.utils.records;
 
 import me.cobeine.radiumduels.statistics.AbstractRecordPool;
 import me.cobeine.radiumduels.statistics.record.FastRecord;

@@ -1,6 +1,6 @@
-package me.cobeine.radiumduels.spigot.impl.storage.mysql.tables;
+package me.cobeine.radiumduels.spigot.storage.mysql.tables;
 
-import me.cobeine.radiumduels.spigot.impl.utils.records.StatsRecord;
+import me.cobeine.radiumduels.spigot.utils.records.StatsRecord;
 import me.cobeine.sqllava.table.Table;
 import me.cobeine.sqllava.table.column.Column;
 import me.cobeine.sqllava.table.column.ColumnSettings;

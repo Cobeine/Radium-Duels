@@ -1,4 +1,4 @@
-package me.cobeine.radiumduels.spigot.impl.utils.records;
+package me.cobeine.radiumduels.spigot.utils.records;
 
 /**
  * @author <a href="https://github.com/Cobeine">Cobeine</a>
