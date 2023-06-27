@@ -37,8 +37,6 @@ allprojects {
         implementation 'com.github.Mqzn:mBoard:1.3'
         implementation 'com.github.Cobeine:SQLava:1.0.1-Beta'
         implementation("com.zaxxer:HikariCP:5.0.1")
-        implementation 'io.github.mqzn:mCommands-spigot:1.0.8'
-        implementation 'io.github.mqzn:mCommands-common:1.0.8'
 
         annotationProcessor 'org.projectlombok:lombok:1.18.24'
     }

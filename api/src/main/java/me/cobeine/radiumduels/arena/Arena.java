@@ -12,7 +12,7 @@ import java.util.List;
  * @author <a href="https://github.com/Cobeine">Cobeine</a>
  */
 
-public interface Arena extends Cloneable, Serializable, Comparable<Arena> {
+public interface Arena extends Cloneable, Serializable, Comparable<Arena>,AutoCloseable {
 
     /**
      * @return The arena's name in storage.
